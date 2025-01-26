@@ -1,0 +1,9 @@
+console.log("Owner balance:", ethers.formatEther(ownerBalance));
+const ownerBalance = await token.balanceOf("0xYourMetaMaskAddress");
+const token = await ethers.getContractAt("ERC20Demo", "0xYourContractAddress");
+.editor
+.help
+const { ethers } = require("hardhat");
+const ERC20Demo = await ethers.getContractAt("ERC20Demo", contractAddress);
+const contractAddress = "<contract_address>";
+const { ethers } = require("hardhat");
